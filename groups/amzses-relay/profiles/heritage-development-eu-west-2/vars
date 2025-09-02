@@ -1,0 +1,10 @@
+# Account details
+
+# Account details
+
+aws_account = "heritage-development-eu-west-2"
+aws_region  = "eu-west-2"
+environment = "development"
+
+# Application details
+application        = "amzses-relay"
