@@ -1,0 +1,10 @@
+# Account details
+
+# Account details
+
+aws_account = "shared-servicest-eu-west-2"
+aws_region  = "eu-west-2"
+environment = "shared-services"
+
+# Application details
+application        = "amzses-relay"
