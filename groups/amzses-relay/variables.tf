@@ -45,5 +45,5 @@ variable "service_subtype" {
 variable "team" {
   type        = string
   description = "The team name for ownership of this service."
-  default     = "Linux & Storage Support"
+  default     = "Linux and Storage Support"
 }
