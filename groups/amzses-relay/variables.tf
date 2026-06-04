@@ -19,6 +19,12 @@ variable "domain" {
   default = "companieshouse.gov.uk"
 }
 
+variable "domain_ipo" {
+  type        = string
+  description = "The domain  to be used when sending email."
+  default = "ipo.gov.uk"
+}
+
 variable "application" {
   type = string
   description = "The application name"
