@@ -16,42 +16,42 @@ variable "environment" {
 variable "domain" {
   type        = string
   description = "The domain  to be used when sending email."
-  default = "companieshouse.gov.uk"
+  default     = "companieshouse.gov.uk"
 }
 
 variable "domain_ipo" {
   type        = string
   description = "The domain  to be used when sending email."
-  default = "ipo.gov.uk"
+  default     = "ipo.gov.uk"
 }
 
 variable "subdomain" {
   type        = string
   description = "The subdomain to be used for MAIL_FROM"
-  default = "amzses"
+  default     = "amzses"
 }
 
 variable "application" {
-  type = string
+  type        = string
   description = "The application name"
 }
 
 variable "repo" {
-  type = string
+  type        = string
   description = "The github source repo"
-  default = "amzses-terraform"
+  default     = "amzses-terraform"
 }
 
 variable "service" {
-  type = string
+  type        = string
   description = "The service name to be used when creating AWS resources."
-  default = "Amazon SES"
+  default     = "Amazon SES"
 }
 
 variable "service_subtype" {
   type        = string
   description = "The service subtype name to be used when creating AWS resources."
-  default = "smtp_user"
+  default     = "smtp_user"
 }
 
 variable "team" {

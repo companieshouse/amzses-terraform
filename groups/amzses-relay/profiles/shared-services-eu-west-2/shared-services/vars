@@ -6,3 +6,4 @@ environment = "shared-services"
 
 # Application details
 application        = "amzses-relay"
+subdomain          = "amzses"

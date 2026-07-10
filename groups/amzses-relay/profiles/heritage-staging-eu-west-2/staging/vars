@@ -6,3 +6,4 @@ environment = "staging"
 
 # Application details
 application        = "amzses-relay"
+subdomain          = "amzses"
