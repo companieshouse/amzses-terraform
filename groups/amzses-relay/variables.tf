@@ -25,6 +25,12 @@ variable "domain_ipo" {
   default = "ipo.gov.uk"
 }
 
+variable "subdomain" {
+  type        = string
+  description = "The subdomain to be used for MAIL_FROM"
+  default = "amzses"
+}
+
 variable "application" {
   type = string
   description = "The application name"

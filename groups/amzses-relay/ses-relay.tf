@@ -17,3 +17,10 @@ resource "aws_ses_domain_identity" "email_relay_ipo" {
 resource "aws_ses_domain_dkim" "email_relay_ipo" {
   domain = "${aws_ses_domain_identity.email_relay_ipo.domain}"
 }
+
+# SES MAIL_FROM
+
+resource "aws_ses_domain_mail_from" "ch_email_from" {
+  domain           = var.domain
+  mail_from_domain = "${var.subdomain}.${aws_ses_domain_identity.email_relay.domain}"
+}
