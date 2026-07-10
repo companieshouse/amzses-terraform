@@ -1,11 +1,11 @@
 resource "aws_iam_user" "smtp_user" {
   name = "smtp_user"
   tags = {
-   # Name           = "${local.common_resource_name}"
-    Environment    = var.environment
-    Service        = var.service
-    Team           = var.team
-    Repo           = var.repo
+    # Name           = "${local.common_resource_name}"
+    Environment = var.environment
+    Service     = var.service
+    Team        = var.team
+    Repo        = var.repo
   }
 }
 

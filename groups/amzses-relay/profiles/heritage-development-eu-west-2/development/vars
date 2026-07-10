@@ -6,3 +6,4 @@ environment = "development"
 
 # Application details
 application        = "amzses-relay"
+subdomain          = "amzses"
