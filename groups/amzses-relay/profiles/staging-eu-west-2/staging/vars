@@ -1,0 +1,11 @@
+# Account details
+
+aws_account = "ch-staging-eu-west-2"
+aws_region  = "eu-west-2"
+environment = "staging"
+
+# Application details
+application        = "amzses-relay"
+subdomain          = "amzses"
+
+enable_ipo         = false

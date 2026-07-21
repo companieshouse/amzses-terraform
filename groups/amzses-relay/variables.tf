@@ -59,3 +59,9 @@ variable "team" {
   description = "The team name for ownership of this service."
   default     = "Linux and Storage Support"
 }
+
+variable "enable_ipo" {
+  type        = bool
+  description = "Whether to enable IPO functionality."
+  default     = false
+}

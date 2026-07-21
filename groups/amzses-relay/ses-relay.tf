@@ -10,12 +10,16 @@ resource "aws_ses_domain_dkim" "email_relay" {
 
 #SES Domain IPO
 resource "aws_ses_domain_identity" "email_relay_ipo" {
+  count = var.enable_ipo ? 1 : 0
+
   domain = var.domain_ipo
 }
 
 # SES dkim IPO
 resource "aws_ses_domain_dkim" "email_relay_ipo" {
-  domain = aws_ses_domain_identity.email_relay_ipo.domain
+  count = var.enable_ipo ? 1 : 0
+
+  domain = aws_ses_domain_identity.email_relay_ipo[count.index].domain
 }
 
 # SES MAIL_FROM
