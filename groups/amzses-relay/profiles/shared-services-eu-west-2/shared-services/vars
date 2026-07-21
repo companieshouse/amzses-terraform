@@ -7,3 +7,5 @@ environment = "shared-services"
 # Application details
 application        = "amzses-relay"
 subdomain          = "amzses"
+
+enable_ipo         = true
