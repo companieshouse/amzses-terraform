@@ -27,3 +27,12 @@ resource "aws_ses_domain_mail_from" "ch_email_from" {
   domain           = var.domain
   mail_from_domain = "${var.subdomain}.${aws_ses_domain_identity.email_relay.domain}"
 }
+
+# Managed IP Pool
+
+resource "aws_sesv2_dedicated_ip_pool" "ch_managed_ip_pool" {
+  count = var.enable_managed_ip_pool ? 1 : 0
+
+  pool_name    = "ch-managed-ip-pool"
+  scaling_mode = "MANAGED"
+}
