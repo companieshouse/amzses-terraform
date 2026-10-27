@@ -10,4 +10,4 @@ subdomain          = "amzses"
 
 enable_ipo         = true
 
-enable_managed_ip_pool = true
+enable_managed_ip_pool = false
