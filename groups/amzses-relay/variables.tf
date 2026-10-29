@@ -65,3 +65,9 @@ variable "enable_ipo" {
   description = "Whether to enable IPO functionality."
   default     = false
 }
+
+variable "enable_managed_ip_pool" {
+  type        = bool
+  description = "Whether to enable managed IP pool functionality."
+  default     = false
+}

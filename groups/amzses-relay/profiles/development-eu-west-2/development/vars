@@ -9,3 +9,5 @@ application        = "amzses-relay"
 subdomain          = "amzses"
 
 enable_ipo         = false
+
+enable_managed_ip_pool = false
